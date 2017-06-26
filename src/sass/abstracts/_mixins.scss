@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// Useful Sass mixins
+// -----------------------------------------------------------------------------
+
+@mixin font-awesome($unicode:null, $position: before) {
+  &:#{$position} {
+    content: #{'"\\'}$unicode#{'"'};
+    font-family: FontAwesome;
+  }
+}

@@ -1,0 +1,159 @@
+// -----------------------------------------------------------------------------
+// Site-wide typography styles.
+// -----------------------------------------------------------------------------
+
+html {
+  font-size: $font_size/($font_size*0+1)/16*100%;
+}
+
+body {
+  font-family: $font_body;
+  font-size: 1em;
+  line-height: 1.4;
+  background: #ffffff;
+  color: #333333
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0 0.5rem;
+  font-family: $font-heading;
+  color: $color_heading
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.25;
+  @media (min-width: 43.75em) {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+  @media (min-width: 56.25em) {
+    font-size: 3em;
+    line-height: 1.05;
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15384615;
+  @media (min-width: 43.75em) {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+  @media (min-width: 56.25em) {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636364;
+  @media (min-width: 43.75em) {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+  @media (min-width: 56.25em) {
+    font-size: 1.75em;
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.11111111;
+  @media (min-width: 43.75em) {
+    line-height: 1.22222222;
+  }
+}
+
+h5, h6 {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.11111111;
+  @media (min-width: 43.75em) {
+    line-height: 1.22222222;
+  }
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: $color_accent;
+  &:hover, &:visited {
+    color: darken($color_accent, 15%);
+    text-decoration: underline;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+  padding-left: 1em;
+  text-indent: -1em;
+  counter-reset: step-increment;
+  margin-bottom: 0.75rem;
+}
+
+ol li:before, ol li ul li:before,
+ul li:before {
+  margin-right: .5em;
+  font-family: Helvetica, sans-serif;
+  content: "•";
+  color: $color_accent
+}
+
+ol li {
+  counter-increment: step-increment
+}
+
+ol li:before {
+  content: counter(step-increment) ".";
+}
+
+ol li ul, ol li ol {
+  margin-bottom: 0
+}
+
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.25;
+  color: #8c8c8c;
+  @media (min-width: 43.75em) {
+    font-size: 1.25em;
+    line-height: 1.45833333;
+  }
+}
+
+hr {
+  margin-bottom: 1rem;
+  border-top: 1px solid lighten(black, 85%);
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, i {
+  font-weight: bold;
+}
+
+code, pre {
+  font-family: monospace;
+  background: lighten(black, 90%);
+}
+
+pre {
+  white-space: pre-wrap;
+  padding: 1em;
+  margin-bottom: 0.75em;
+}
+
+img {
+  max-width: 100%;
+}
+

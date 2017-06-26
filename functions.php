@@ -1,4 +1,4 @@
-<?php // custom functions.php template @ digwp.com
+<?php
 
 // add feed links to header
 if (function_exists('automatic_feed_links')) {

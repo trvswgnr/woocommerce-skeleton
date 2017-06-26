@@ -1,0 +1,30 @@
+{
+  "name": "woocommerce-skeleton",
+  "version": "0.1.0",
+  "description": "WooCommerce Wordpress Skeleton Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Travis A. Wagner",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-clone": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "jstransformer-markdown-it": "^2.0.0",
+    "merge-stream": "^1.0.1",
+    "pug-bemify": "^1.0.4",
+    "pug-php-filter": "0.0.1"
+  }
+}
